@@ -11,6 +11,11 @@ public class OriginalScore implements GameScore{
      * 
      */
     public int calculateScore(int correctCount,int incorrectCount) {
-        return 0;
+        int score = 100;
+        score -= incorrectCount*10;
+        if (score < 0){
+            score = 0;
+        }
+        return score;
     }
 }
