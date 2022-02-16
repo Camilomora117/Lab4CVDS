@@ -10,7 +10,17 @@ public class BonusScore implements GameScore{
      * @param incorrectCount int Numero de letras incorrectas
      * 
      */
+	@Override
     public int calculateScore(int correctCount,int incorrectCount){
-        return 0;
+		int score = 0;
+        int correct = 10 * correctCount;
+        int penalty = 5 * incorrectCount;
+        score += correct;
+        score -= penalty;
+        if (score < 0){
+            score = 0;
+        }
+        return score;
     }
+	
 }
