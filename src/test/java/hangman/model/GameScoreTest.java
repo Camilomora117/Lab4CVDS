@@ -1,3 +1,7 @@
+package hangman.model;
+
+import static org.junit.Assert.assertEquals;
+import org.junit.Test;
 /**
  * CLASES DE EQUIVALENCIA
  * + Que los score tengan puntaje minimo de 0
@@ -22,7 +26,7 @@ public class GameScoreTest {
 
     OriginalScore originalScore = new OriginalScore();
     BonusScore bonusScore = new BonusScore();
-    PowerScore powerBonusScore = new PowerScore();
+    PowerScore powerScore = new PowerScore();
 
     @Test
     public void originalScoreMinimalIsZero(){

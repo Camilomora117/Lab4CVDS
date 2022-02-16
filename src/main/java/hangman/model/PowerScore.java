@@ -12,7 +12,7 @@ public class PowerScore implements GameScore{
      */
     public int calculateScore(int correctCount,int incorrectCount){
         int score = 0;
-        for (int i = 0; i<correctCount;i++){
+        for (int i = 0; i<= correctCount;i++){
             score *= 5;
         }
         score -= incorrectCount*8;
