@@ -97,7 +97,7 @@ public class GameScoreTest {
     @Test
     public void powerScoreCorrectPenalization(){
         int result = powerScore.calculateScore(2,1);
-        assertEquals(17,result);
+        assertEquals(22,result);
     }
 
     @Test
