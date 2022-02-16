@@ -25,8 +25,8 @@ public class HangmanFactoryServices extends com.google.inject.AbstractModule {
     @Override
     protected void configure() {
         /* Guice dependency injection */
-        bind(Language.class).to(Spanish.class);
-        bind(HangmanDictionary.class).to(SpanishDictionaryDataSource.class);
+        bind(Language.class).to(French.class);
+        bind(HangmanDictionary.class).to(FrenchDictionaryDataSource.class);
         bind(HangmanPanel.class).to(HangmanNoviolentoPanel.class);
         bind(GameScore.class).to(OriginalScore.class);
     }
